@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stop Watch</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="clock__header">
+    <h1 class="clock__heading">Stopwatch</h1>
+  </div>
+
+  <div class="clock">
+
+    <div class="clock__brand">
+      <h1 class="clock__logo">POWER</h1>
+    </div>
+
+    <div class="num num1">
+      <div>1</div>
+    </div>
+    <div class="num num2">
+      <div>2</div>
+    </div>
+    <div class="num num3">
+      <div>3</div>
+    </div>
+    <div class="num num4">
+      <div>4</div>
+    </div>
+    <div class="num num5">
+      <div>5</div>
+    </div>
+    <div class="num num6">
+      <div>6</div>
+    </div>
+    <div class="num num7">
+      <div>7</div>
+    </div>
+    <div class="num num8">
+      <div>8</div>
+    </div>
+    <div class="num num9">
+      <div>9</div>
+    </div>
+    <div class="num num10">
+      <div>10</div>
+    </div>
+    <div class="num num11">
+      <div>11</div>
+    </div>
+    <div class="num num12">
+      <div>12</div>
+    </div>
+
+    <div class="hand" id="second">
+      <div class="second"></div>
+    </div>
+      <div class="hand" id="minute">
+      <div class="minute"></div>
+    </div>
+    <div class="hand" id="hour">
+      <div class="hour"></div>
+    </div>
+
+  </div>
+
+
+
+  <div class="watch__cont">
+
+    <div class="stopwatch__con">
+
+      <div class="watch__header">
+        <h1 class="watch__heading">Stop Watch</h1>
+      </div>
+
+      <div id="timer">
+
+        <div class="watch__detail">
+
+          <span class="digit" id="hr">00</span>
+          <span id="text">Hr</span>
+          <span class="digit" id="min">00</span>
+          <span id="text">Min</span>
+          <span class="digit" id="sec">00</span>
+          <span id="text">Sec</span>
+          <span class="counts" id="count">00</span>
+
+        </div>
+
+      </div>
+
+      <div class="stopwatch__buttons">
+        <button class="stopwatch__btn" id="str" onclick="start()" style="width: 40%;">Start</button>
+        <button class="stopwatch__btn" id="sto" onclick="stop()" style="display: none; width: 40%; margin-top: 2rem">Stop</button>
+        <button class="stopwatch__btn" id="con" onclick="continu()" style="display: none; width: 40%; margin-top: 2rem;">Continue</button>
+        <button class="stopwatch__btn" id="res" onclick="reset()" style="display: none; width: 40%; margin-top: 2rem;">Reset</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="watch.js"></script>
+</body>
+
+</html>
+

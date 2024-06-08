@@ -1,0 +1,916 @@
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: inherit;
+    background-color: #efefef;
+    font-style: normal;
+
+}
+
+.stopwatch__con {
+    margin-top: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+    text-align: center;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    color: #ffff;
+    border-radius: 5px;
+    box-shadow: 20px 20px 20px -10px rgba(0, 0, 0, 0.15),
+        inset 15px 15px 10px rgba(255, 255, 255, 0.5),
+        -15px -15px 35px rgba(255, 255, 255, 0.35),
+        inset -1px -1px 10px rgba(0, 0, 0, 0.2);
+        margin-bottom: 5rem;
+        position: relative;
+        top: -50rem;
+        left: 30rem;
+}
+
+#timer {
+    margin-bottom: 4rem;
+    background-color: #eee;
+    padding: 2rem 0;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.10);
+    border-radius: 3px;
+}
+
+.stopwatch__buttons {
+    text-align: center;
+}
+
+
+.stopwatch__btn {
+    margin-left: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#str {
+    background-image: linear-gradient(to right bottom, goldenrod, goldenrod);
+    padding: 1rem 2.5rem;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 100px;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.10);
+    transition: all .8s;
+    display: inline-block;
+}
+
+#str:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    animation: pulsate 1s infinite;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, .25);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
+
+#con {
+    background-image: linear-gradient(to right bottom, goldenrod, goldenrod);
+    padding: 1rem 2.5rem;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 100px;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.10);
+    transition: all .8s;
+}
+
+#str:hover {
+    transform: translateY(-3px);
+}
+
+#sto {
+    padding: 1rem 2.5rem;
+    background-image: linear-gradient(to right bottom, goldenrod, goldenrod);
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 100px;
+    margin: 0 auto;
+    transition: all .8s;
+}
+
+#sto:hover {
+    transform: translateY(-3px);
+}
+
+#res {
+    padding: 1rem 2.5rem;
+    background-image: linear-gradient(to right bottom, goldenrod, goldenrod);
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 100px;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.10);
+    transition: all .8s;
+}
+
+.digit {
+    font-size: 5rem;
+    margin-left: 2rem;
+    color: goldenrod;
+}
+
+#text {
+    font-size: 2rem;
+    color: goldenrod;
+}
+
+#count {
+    font-size: 5rem;
+    margin-left: 2rem;
+    color: goldenrod;
+}
+
+.watch__header {
+    margin-top: -7rem;
+}
+
+.watch__heading {
+    font-size: 3.5rem;
+    background-image: linear-gradient(to right bottom, goldenrod, goldenrod);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .2s;
+    margin-bottom: 4rem;
+}
+
+.watch__heading:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+}
+
+@media only screen and (max-width:1330px) {
+    .stopwatch__con {
+        margin-top: 12rem;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .stopwatch__con {
+        width: 40%;
+    }
+
+    .watch__detail {
+        margin-left: -2rem !important;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .stopwatch__con {
+        width: 48%;
+    }
+
+    .watch__detail {
+        margin-left: -2.3rem !important;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .stopwatch__con {
+        width: 55%;
+    }
+
+    .watch__detail {
+        margin-left: -2.3rem !important;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .stopwatch__con {
+        width: 65%;
+    }
+
+    .watch__detail {
+        margin-left: -2.3rem !important;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .stopwatch__con {
+        width: 75%;
+    }
+
+    .watch__detail {
+        margin-left: -2.3rem !important;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .stopwatch__con {
+        width: 80%;
+    }
+
+    .watch__detail {
+        margin-left: -2.3rem !important;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .digit {
+        font-size: 3.5rem;
+        margin-left: 2rem;
+    }
+
+    #text {
+        font-size: 1.4rem;
+    }
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    #count {
+        font-size: 3.5rem;
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .stopwatch__con {
+        width: 90%;
+    }
+
+    .watch__detail {
+        margin-left: -2.3rem !important;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .stopwatch__con {
+        width: 85%;
+    }
+
+    .clock__heading {
+        transform: translateX(4rem);
+    }
+
+    .digit {
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+
+    #text {
+        font-size: 1.6rem;
+    }
+
+    #count {
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+
+    .watch__heading {
+        font-size: 3rem;
+    }
+
+    #str {
+        font-size: 1.5rem;
+        width: 35% !important;
+    }
+
+    #sto {
+        font-size: 1.5rem;
+        width: 35% !important;
+    }
+
+    #con {
+        font-size: 1.5rem;
+        width: 35% !important;
+    }
+
+    #res {
+        font-size: 1.5rem;
+        width: 35% !important;
+    }
+
+    .watch__detail {
+        margin-left: -2.3rem !important;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .stopwatch__con {
+        width: 95%;
+    }
+
+    .watch__detail {
+        margin-left: -2.3rem !important;
+    }
+}
+
+
+
+@media only screen and (max-width:900px) {
+    .watch__cont {
+        margin-top: 8rem;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .watch__cont {
+        margin-top: 10rem;
+    }
+}
+
+@media only screen and (max-width:470px) {
+    .watch__cont {
+        position: relative;
+        left: 0.1rem;
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .watch__cont {
+        left: 0.1rem;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .watch__cont {
+        left: -0.1rem;
+    }
+
+    .clock__heading {
+        transform: translateX(6rem);
+    }
+
+    .stopwatch__con {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .watch__cont {
+        left: -0.1rem;
+    }
+
+    .stopwatch__con {
+        width: 95%;
+    }
+
+    .digit {
+        font-size: 3.3rem;
+        margin-left: 2rem;
+    }
+
+    #text {
+        font-size: 1.5rem;
+    }
+
+    #count {
+        font-size: 3.3rem;
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .watch__cont {
+        left: -0.1rem;
+    }
+
+    .clock__heading {
+        transform: translateX(8rem);
+    }
+
+    .stopwatch__con {
+        width: 96% !important;
+    }
+
+
+}
+
+@media only screen and (max-width:330px) {
+    .watch__cont {
+        left: -0.1rem;
+    }
+
+    .stopwatch__con {
+        width: 99% !important;
+    }
+}
+
+@media only screen and (max-width:310px) {
+    .watch__cont {
+        left: 0.1rem;
+    }
+
+    .watch__detail {
+        position: relative;
+        left: 0.5rem;
+    }
+
+    .stopwatch__con {
+        width: 99% !important;
+    }
+
+
+    .digit {
+        font-size: 3rem !important;
+        margin-left: 1rem !important;
+    }
+
+    #text {
+        font-size: 1.5rem;
+    }
+
+    #count {
+        font-size: 3rem !important;
+        margin-left: 1rem !important;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .stopwatch__con {
+        width: 95%;
+    }
+
+    .watch__detail {
+        margin-left: -1.2rem !important;
+    }
+
+    #str {
+        font-size: 1.5rem;
+        width: 40% !important;
+    }
+
+    #sto {
+        width: 40% !important;
+    }
+
+    #con {
+        width: 40% !important;
+    }
+
+    #res {
+        width: 40% !important;
+    }
+
+    .digit {
+        font-size: 3.3rem;
+        margin-left: 1rem !important;
+    }
+
+    #text {
+        font-size: 1.5rem;
+    }
+
+    #count {
+        font-size: 3.3rem;
+        margin-left: 1rem !important;
+    }
+}
+
+@media only screen and (max-width:310px) {
+    .stopwatch__con {
+        width: 95%;
+    }
+
+    .watch__detail {
+        margin-left: -2.3rem !important;
+    }
+
+    #str {
+        font-size: 1.5rem;
+        width: 45% !important;
+    }
+
+    #sto {
+        width: 45% !important;
+    }
+
+    #con {
+        width: 45% !important;
+    }
+
+    #res {
+        width: 45% !important;
+    }
+
+    .digit {
+        font-size: 3.3rem;
+        margin-left: 2rem;
+    }
+
+    #text {
+        font-size: 1.5rem;
+    }
+
+    #count {
+        font-size: 3.3rem;
+        margin-left: 2rem;
+    }
+}
+
+.watch__detail {
+    margin-left: -1.7rem;
+}
+
+.clock {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 10px groove gold;
+    background-color: #eee;
+    overflow: hidden;
+    box-shadow: 20px 20px 20px -10px rgba(0, 0, 0, 0.15),
+    inset 15px 15px 10px rgba(255, 255, 255, 0.5),
+    -15px -15px 35px rgba(255, 255, 255, 0.35),
+    inset -1px -1px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: -8rem;
+    left: -33rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .clock {
+        width: 400px;
+        height: 400px;
+    }
+
+    .clock__logo {
+        top: 55px;
+        left: 156px !important;
+        font-size: 2rem !important;
+    }
+
+    .minute {
+        height: 35% !important;
+        width: 4px;
+        border-radius: 2px;
+    }
+
+    .hour {
+        height: 30% !important;
+        width: 8px;
+        border-radius: 4px;
+    }
+
+    html {
+        overflow-x: hidden !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .clock {
+        width: 350px;
+        height: 350px;
+    }
+
+    .clock__logo {
+        top: 55px;
+        left: 136px !important;
+        font-size: 1.7rem !important;
+    }
+
+    .minute {
+        height: 33.5% !important;
+        width: 4px;
+        border-radius: 2px;
+    }
+
+    .hour {
+        height: 29% !important;
+        width: 8px;
+        border-radius: 4px;
+    }
+
+    .second {
+        width: 1px;
+        height: 38% !important;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    .clock {
+        width: 320px;
+        height: 320px;
+    }
+
+    .clock__logo {
+        top: 55px;
+        left: 122px !important;
+        font-size: 1.7rem !important;
+    }
+
+    .minute {
+        height: 33.5% !important;
+        width: 4px;
+        border-radius: 2px;
+    }
+
+    .hour {
+        height: 29% !important;
+        width: 7px !important;
+        border-radius: 4px;
+    }
+
+    .second {
+        width: 1px;
+        height: 38% !important;
+    }
+
+    .num::after {
+        height: 12px !important;
+    }
+
+    .num {
+        font-size: 2rem !important; 
+        padding: 15px !important;
+    }
+
+    .clock::before {
+        width: 15px !important;
+        height: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .clock {
+        width: 290px;
+        height: 290px;
+    }
+
+    .clock__logo {
+        top: 50px !important;
+        left: 112px !important;
+        font-size: 1.4rem !important;
+    }
+
+    .minute {
+        height: 33.5% !important;
+        width: 4px;
+        border-radius: 2px;
+    }
+
+    .hour {
+        height: 29% !important;
+        width: 7px !important;
+        border-radius: 4px;
+    }
+
+    .second {
+        width: 1px;
+        height: 38% !important;
+    }
+
+    .num::after {
+        height: 12px !important;
+    }
+
+    .num {
+        font-size: 2rem !important; 
+        padding: 13px !important;
+    }
+
+    .clock::before {
+        width: 15px !important;
+        height: 15px !important;
+    }
+}
+
+.clock::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #ff9700;
+    border-radius: 50%;
+}
+
+.num {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 18px;
+    font-weight: 700;
+    color: #ff9700;
+}
+
+.num::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 15px;
+    background-color: #ff9700;
+  }
+
+.num1 {
+    transform: rotate(30deg);
+}
+
+.num1 div {
+    transform: rotate(-30deg);
+}
+
+.num2 {
+    transform: rotate(60deg);
+}
+
+.num2 div {
+    transform: rotate(-60deg);
+}
+
+.num3 {
+    transform: rotate(90deg);
+}
+
+.num3 div {
+    transform: rotate(-90deg);
+}
+
+.num4 {
+    transform: rotate(120deg);
+}
+
+.num4 div {
+    transform: rotate(-120deg);
+}
+
+.num5 {
+    transform: rotate(150deg);
+}
+
+.num5 div {
+    transform: rotate(-150deg);
+}
+
+.num6 {
+    transform: rotate(180deg);
+}
+
+.num6 div {
+    transform: rotate(-180deg);
+}
+
+.num7 {
+    transform: rotate(210deg);
+}
+
+.num7 div {
+    transform: rotate(-210deg);
+}
+
+.num8 {
+    transform: rotate(240deg);
+}
+
+.num8 div {
+    transform: rotate(-240deg);
+}
+
+.num9 {
+    transform: rotate(270deg);
+}
+
+.num9 div {
+    transform: rotate(-270deg);
+}
+
+.num10 {
+    transform: rotate(300deg);
+}
+
+.num10 div {
+    transform: rotate(-300deg);
+}
+
+.num11 {
+    transform: rotate(330deg);
+}
+
+.num11 div {
+    transform: rotate(-330deg);
+}
+
+.num12 {
+    transform: rotate(360deg);
+}
+
+.num12 div {
+    transform: rotate(-360deg);
+}
+
+.hand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hand div {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff9700;
+}
+
+.second {
+    width: 1px;
+    height: 40%;
+}
+
+.minute {
+    height: 38%;
+    width: 4px;
+    border-radius: 2px;
+}
+
+.hour {
+    height: 30%;
+    width: 8px;
+    border-radius: 4px;
+}
+
+.clock__brand {
+    position: relative;
+}
+
+.clock__logo {
+    position: absolute;
+    top: 55px;
+    color: #ff9700;
+    font-size: 2.5rem;
+    left: 195px;
+}
+
+.clock__header {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.clock__heading {
+    color: #ff9700;
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 500px) {
+    .clock__heading {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .clock__heading {
+        transform: translateX(-1rem);
+    }
+}
